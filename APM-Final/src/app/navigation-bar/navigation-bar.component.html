@@ -1,0 +1,30 @@
+<nav>
+  <div class='container-fluid'>
+      <!--<a class='navbar-brand'>{{pageTitle}}</a>-->
+      <section class="logobar pull-left">
+          <a href="javascript:void(0)" title="logo" class="pull-left" [routerLink]="['']">
+              <img class="image-responsive" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAxAD0DASIAAhEBAxEB/8QAGwAAAQQDAAAAAAAAAAAAAAAAAAECAwcEBQb/xAA2EAACAQMBBgMECAcAAAAAAAABAgMABBEFBhITITFBUXGRFCIyYQczQlJiY4HRFiNTgpKhsv/EABsBAAIDAQEBAAAAAAAAAAAAAAAEAQMFAgYH/8QAJxEAAQQBAgUEAwAAAAAAAAAAAQACAxEEEiEFEzFRYSIyQbGBkcH/2gAMAwEAAhEDEQA/ANz7OPup61L7PDuAkgHyrH3PzWpxXC/WN6V8qpe6T2ijA91gT5VGRg/CKAcfbPpTt5cjJPpQhT2NrLe3K28SAO2cE9OQzWyOzF/vZ/l48Of7VPsWVk2htlwTkP8A8mrHMMY6oR61scP4ezJiL3d6+lnZWW6F+kdlSx4kTFWhYMOxFKJn/pGuw1GytOJO5hJYKTnePhXLrIpHQ/6rOngMLqKcilEgsKDBznDUMH3ft0+NIXfdTjyN4KMmnARgK/Cn3CcBj0J86otWqNFb8VZdpp95eBjaW08wU4YxoWx501x9ooSuOvQetZOmaxqGmBo9OaaATEEhM++e3bnVkejUOZdeOq4fqr0VflbzY3T7rT9oba61G3ltrZA+9LMpVVypAyT86sObUNKYDN9ZnH5w/eqmu9oNY1KF7O4lmuEb4oiM5wc9AM9a1TPuMVeBVYdQykEVq4/FW4bOXC22k3vtv+EhLgOyHa5HUfCse6OjSGTentG3gR9cOfLzqv8AV1totSmS0ROAMbu6cjoO9QcXwjjH9tHFbsqf40llZwyABoATUGLyTeq1YH0T8eOe+gkMfBWPfUBRkMTg88Z/Ss7Zm7uNX2e1mDWjDLbwZ4bhAoXkT2GOWAaxPo8ngtJrue6ubaGN0EaiSQKSc56Ht860ur6xfMsthJNALdW5pbBQjfPK9a1YcoY+JE5xJ9wrvfS/CQkg507w0V7d+1daXTywnWNiNPk1CQCFJTNcOqhcopbkAO55D9aydbjSLVtE1UrwLKxtmkZcdMgBUHz/AGrhpNYupNKj05pB7IhyEAxnnnme/M0/UtbvdRhhhu5Q0UPwKowOmMnxrg8Ui0VRLqbv3Le/j73XYwX6uoq3fo/1dbdM/wDBd3qmnjg3t7KZJ5Yh7ygtjAPbAAHqa5TajUBr0ttO9rwDGm5vKcl/M/KjSdoL7S43jtJgIn5mN13lz5GodS1a61JkN3IGCZCIqhVXPgBS2VmtniDQSDQBFCiQbu7+b7K6DGMUhJAO5o3vR+KWrFnH+P1pRaR/db1qffFG/WTQTyjek7UUVPyhKtKaKKEFJRRRQoRSmiipQv/Z" />
+          </a>
+          <section class="pull-left lftAlignBar">
+          <p class="legalCheckbar">Legal Document</p>
+          <span>Acceptance check tool</span>
+          </section>
+      </section>
+      <section class="pull-right logobar">
+          <section class="pull-left lftAlignBar">
+          <i class="fa fa-user userListName" aria-hidden="true"></i>
+              <span class='userlist'>welcome {{UsernameDetails}}</span>
+          </section>
+          <section class="pull-left">
+          <a class="hambuegerIcon" href="javascript:void(0)">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+          </a>
+          </section>
+      </section>
+      <ul class='nav navbar-nav hide'>
+          <li><a [routerLink]="['/welcome']">Home</a></li>
+          <li><a [routerLink]="['/products']">Product</a></li>
+          <li><a [routerLink]="['/contact']">Employee List</a></li>
+      </ul>
+  </div>
+</nav>

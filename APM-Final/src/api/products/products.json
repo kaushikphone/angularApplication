@@ -1,0 +1,62 @@
+[
+    {
+		"MonthName": "Today",
+		"category":"Category 1-40%",
+        "MonthlyDetails":{
+            "records":
+				[
+					{ "id": "1000","MonthDescription": "Kaustav srivastav Tender Notice 01","Type":"Tender","Date":"27/02/2017","status":"Processed" },
+					{ "id": "1001","MonthDescription": "Kaustav srivastav Tender Notice 01","Type":"RFP","Date":"22/02/2016","status":"Processed" },
+					{ "id": "1002","MonthDescription": "Kaustav srivastav Tender Notice 01","Type":"VTX","Date":"21/02/2017","status":"Processed" }
+				]
+		}
+    },
+    {
+		"MonthName": "Yesterday",
+		"category":"Category 2-73%",
+        "MonthlyDetails":{
+            "records":
+				[
+					{ "id": "1004", "MonthDescription": "Kaushik Dey Tender Notice 01","Type":"Tender","Date":"21/01/2016","status":"UnProcessed" },
+					{ "id": "1005", "MonthDescription": "Kaushik Dey Tender Notice 02","Type":"RFG","Date":"21/01/2016","status":"Processed" },
+					{ "id": "1006", "MonthDescription": "Kaustav Dey Tender Notice 03","Type":"VTX","Date":"21/01/2016","status":"Processed" }
+				]
+		}
+    },
+    {
+		"MonthName": "One week",
+		"category":"Category 3-10%",
+        "MonthlyDetails":{
+            "records":
+				[
+					{ "id": "1007", "MonthDescription": "Nandini Roy Tender Notice 01","Type":"RFG","Date":"20/01/2015","status":"Processed" },
+					{ "id": "1008", "MonthDescription": "Nandini Roy Tender Notice 02","Type":"TVX","Date":"20/01/2015","status":"Processed" },
+					{ "id": "1009", "MonthDescription": "Nandini Roy Tender Notice 03","Type":"Tender","Date":"20/01/2015","status":"UnProcessed" }
+				]
+		}
+    },
+    {
+		"MonthName": "Two week",
+		"category":"Category 4-82%",
+        "MonthlyDetails":{
+            "records":
+				[
+					{ "id": "1010", "MonthDescription": "Paromita Bhatt Tender Notice 01","Type":"RFG","Date":"16/01/2014","status":"Processed" },
+					{ "id": "1011", "MonthDescription": "Paromita Bhatt Tender Notice 02","Type":"TVX","Date":"16/01/2014","status":"Processed" },
+					{ "id": "1012", "MonthDescription": "Paromita Bhatt Tender Notice 03","Type":"Tender","Date":"16/01/2014","status":"UnProcessed" }
+				]
+		}
+    },
+    {
+		"MonthName": "One month",
+		"category":"Category 5-40%",
+        "MonthlyDetails":{
+            "records":
+				[
+					{ "id": "1013", "MonthDescription": "Rahul Khanna Tender Notice 01","Type":"TVX","Date":"16/01/2012","status":"Processed" },
+					{ "id": "1014", "MonthDescription": "Rahul Khanna Tender Notice 02","Type":"TVX","Date":"16/01/2012","status":"Processed" },
+					{ "id": "1015", "MonthDescription": "Rahul Khanna Tender Notice 03","Type":"Tender","Date":"16/01/2012","status":"UnProcessed" }
+				]
+		}
+    }
+]

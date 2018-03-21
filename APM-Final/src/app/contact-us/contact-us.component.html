@@ -1,0 +1,120 @@
+
+<section class="col-lg-6">
+    <h1 class="WelcomeTxt">{{welcome}}</h1>
+    <!--<input ng-model="searchText" placeholder="enter search term here">-->
+                <table class="table">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>City</th> 
+                        <th>Country</th>
+                        <th>Edit</th>
+                    </tr>
+                    <tr *ngFor="let post of _postsArray;let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{post.Name}}</td>
+                        <td>{{post.City}}</td>
+                        <td>{{post.Country}}</td>
+                        <td><button class="btn btn-danger" title="Edit" (click)="showDialog(this,i)">Edit</button></td>
+                    </tr>
+                </table>
+                </section>
+                <!--Node Api calling-->
+                <section class="col-lg-6">
+                    <h1 class="WelcomeTxt">{{EmployeeHeadingBar}}</h1>
+                    <!--<i class="fa fa-upload" aria-hidden="true"></i>-->
+                    <a class="btn btn-danger pull-right" (click)="EmptyModalOpening()">{{BtnName}}</a>
+                    <table class="table">
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th> 
+                            <th>Email</th>
+                            <th>Designation</th>
+                            <th>Phone Number</th>
+                            <th>Edit</th>
+                        </tr>
+                        <tr *ngFor="let employee of _postEmployeeArray;let i = index">
+                            <td>{{i + 1}}</td>
+                            <td>{{employee.firstname}}</td>
+                            <td>{{employee.lastname}}</td>
+                            <td>{{employee.email}}</td>
+                            <td>{{employee.designation}}</td>
+                            <td>{{employee.phonenumber}}</td>
+                            <td><button class="btn btn-danger" title="Edit" (click)="showDialog(this,i)">Edit</button></td>
+                        </tr>
+                    </table>
+                </section>
+                <!--modal dialog bootstrap-->
+                <div class="modalOverlayer"></div>
+                <div id="myModal" class="modal" role="dialog">
+                    <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" (click)="hideDialog(1)">&times;</button>
+                          <h4 class="modal-title">{{heading}}</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                  <label for="empName">Employee Name:</label>
+                                  <input type="text" class="form-control" id="empName">
+                                </div>
+                                <div class="form-group">
+                                  <label for="empCity">City:</label>
+                                  <input type="text" class="form-control" id="empCity">
+                                </div>
+                                <div class="form-group">
+                                    <label for="empCountry">Country:</label>
+                                    <input type="text" class="form-control" id="empCountry">
+                                   </div>
+                                <button type="submit" class="btn btn-default">Submit</button>
+                              </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-dismiss="modal"(click)="hideDialog(1)">Close</button>
+                        </div>
+                      </div>  
+                    </div>
+                  </div>
+                    
+                <!--Insert modal dialog bootstrap-->
+                <div class="modalOverlayer"></div>
+                <div id="ModalInsertPopUp" class="modal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" (click)="hideDialog(2)">&times;</button>
+                                <h4 class="modal-title">{{EmployeeList}}</h4>
+                              </div>
+                              <div class="modal-body">
+                                  <form>
+                                      <div class="form-group">
+                                        <label for="FirstName">First Name:</label>
+                                        <input type="text" class="form-control" required id="FirstName" placeholder="Provide First Name">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="lastName">last Name:</label>
+                                          <input type="text" class="form-control" required id="lastName" placeholder="Provide Last Name">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="email">Email:</label>
+                                          <input type="email" class="form-control" required id="email" placeholder="Provide email address">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="Desig">Designation:</label>
+                                          <input type="text" class="form-control" id="Desig" required placeholder="Provide Designation">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="lblPhone">Phone Number:</label>
+                                          <input type="number" class="form-control" id="lblPhone" required placeholder="Provide Phone Number">
+                                      </div>
+                                      <button type="button" class="btn btn-danger" title="Submit" (click)="sendForm()">Submit</button>
+                                    </form>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--Insert modal dialog bootstrap-->

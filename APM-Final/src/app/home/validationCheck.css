@@ -1,0 +1,183 @@
+.bodRadiusAuto.padAuto{
+    padding: 0;
+}
+.panel-body.padAuto{
+    padding: 0!important;
+}
+.containerAlignMent{
+    float: left;
+    clear: left;
+    width: 100%;
+}
+.bodRadiusAuto{
+    border-radius: 0!important;
+    -webkit-border-radius: 0!important;
+    -moz-border-radius: 0!important;
+}
+.bodRadiusAuto.bodAutoColor{
+    border-color: #9a9b9c;
+}
+.ToolbarAutoAlignment{
+    padding-left: 0;
+    margin-left: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.ToolbarAutoAlignment li{
+    float: left;
+    padding: 11px 25px 11px 25px;
+    list-style: none;
+    border-right: 1px solid #9a9b9c;
+    text-align: center;
+}
+.ToolbarAutoAlignment li a{
+    color: #9a9b9c!important;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.marTop6{
+    margin-top: -6px;
+}
+.panel-title > a:before {
+    float: right !important;
+    font-family: FontAwesome;
+    content:"\f068";
+    padding-right: 5px;
+}
+.panel-title > a.collapsed:before {
+    float: right !important;
+    content:"\f067";
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+.navigationBarAlignment{
+    padding-right: 20px;
+    padding-top: 148px !important;
+    margin-bottom: 14px;
+}
+.collapseablePanelBar{
+    border-radius: 0!important;
+    -webkit-border-radius: 0!important;
+    -moz-border-radius: 0!important;
+    background: #ffb300!important;
+    background: -moz-linear-gradient(top, #ffb300 0%, #ffb300 100%)!important;
+    background: -webkit-linear-gradient(top, #ffb300 0%,#ffb300 100%)!important;
+    background: linear-gradient(to bottom, #ffb300 0%,#ffb300 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb300', endColorstr='#ffb300',GradientType=0 );
+}
+.bodBarNoneAuto{
+    box-shadow: none!important;
+    border: none!important;
+}
+.posRelative{
+    position: relative;
+}
+.collapseInBar{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.padLeftAutoBar{
+    padding-left: 0!important;
+}
+.padRightAutoBar{
+    padding-right: 0!important;
+}
+.panel-group.panelBarAuto{
+    margin-bottom: 0;
+}
+.collapseablePanelBar a{
+    color: #fff!important;
+    font-size: 13px;
+    display: block;
+}
+.panel-group .panel{
+    border: none;
+    box-shadow: none;
+}
+.collapseablePanelBar h4{
+    line-height: 23px!important;
+}
+.padLeftAuto{
+    padding-left: 0;
+}
+.PrposedClausedBarDesignAlignment{
+    padding-left: 0;
+    margin-left: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+
+}
+.PrposedClausedBarDesignAlignment li{
+    list-style: none;
+    float: left;
+    width: 100%;
+    background:#e3e1de;
+    border-bottom: 2px solid #fff;
+    padding: 10px;
+}
+.panel-heading.CommonBgColor{
+    background-color: #d45b15!important;
+    background-image: none!important;
+    border-radius: 0px!important;
+    padding: 19px 25px;
+    position: relative;
+}
+.panelBodyAlignment{
+    background-color: #f0efed;
+    padding:5px;
+}
+.boxShadowNone{
+    box-shadow: none!important;
+    border-radius: 0px!important;
+    border: none!important;
+}
+.panelBgColorApp{
+    background-color: #5e2220;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90%;
+    height: 100%;
+    color: #fff;
+    line-height: 40px;
+    padding-left: 15px;
+}
+.innerContentArea{
+    padding: 5px;
+    background-color: #fff;
+    color: #000;
+}
+.innerContentArea p{
+    font-size: 12px;
+    width: 88%;
+}
+.padTop0Bar{
+    padding-top: 0!important;
+}
+.numberz{
+    width: 100%;
+}
+.autoRepositionBar{
+    position: absolute;
+    z-index: 111;
+    width: 96%;
+}
+.panelBgColorApp.similarScoreSize{
+    font-size: 12px;
+    width: 190px;
+}
+.categoryList{
+    margin: 0;
+    padding: 0;
+}
+.categoryList li{
+    list-style: none;
+    font-size: 12px;
+    padding-left: 10px;
+    line-height: 22px;
+}

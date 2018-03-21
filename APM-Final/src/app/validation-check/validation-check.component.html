@@ -1,0 +1,130 @@
+<pm-navigation-bar></pm-navigation-bar>
+<input type="button" class="btn btn-danger" value="back" title="Back" (click)="backToworkSpace()" [ngStyle]="{'margin-top': '13px'}" />
+<div [ngClass]="['BgcolorBar','container-fluid','containerAlignMent','minmarginTop15']">
+    <div class="row">
+     <!--container row for save and Proposed cause-->
+      <div class="col-lg-8 pull-left">
+        <div class="panel panel-default bodRadiusAuto bodAutoColor" [ngClass]="['MinmarginBtm0']">
+          <div class="panel-heading bodRadiusAuto padAuto">
+            <ul class="ToolbarAutoAlignment">
+              <li>
+                <a href="javascript:void(0)" title="Save">Save</a>
+                  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAYABYDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAYFAQT/xAApEAABBAECBAUFAAAAAAAAAAABAgMEBQAGERITITEHFCJBYRUyUWKh/8QAGAEAAgMAAAAAAAAAAAAAAAAAAgMAAQT/xAAcEQADAAIDAQAAAAAAAAAAAAAAAREDIRIxseH/2gAMAwEAAhEDEQA/ALpu21PY6pEONe+VjyJs5hCBEaVy0sKHD1KdzuD75t2dfquFWy5Q1WVchpbvD5FnrwpJ2+34ycRCCmpdt9bRTLg3NggPrSkpPMWBt6unth6cuc0uIrxGiLEgFopDTW6uLpt2+cVTW1Xrz4Ufhrb21g9NauZwmFMSHKbPJQ3wc5ClKHpA37DGc0VEFbqm8gpUVpjQq9kKPdQS24N/5jCXQjLOWjE1HpW68y63TKiSa5+emyUzKUUlt0K4lAEd0q/B7Z4ZOnNUSdPN1r1dSqfSUEy+aQtRSsK36D322xjKgSysrdKwrZq6ubK6aisuTEsIQ3HcKwA2Fgkkj9hjGMgDddP/2Q==" class="img-responsive pull-right">
+              </li>
+              <li>
+                <a href="javascript:void(0)" title="Export">Export</a>
+                  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAaABYDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUHBAb/xAAsEAABAwQBAwMBCQAAAAAAAAABAgMFAAQGERIHIUEUFTEWJVFSVmFxdZSy/8QAFwEBAQEBAAAAAAAAAAAAAAAAAgMBBP/EAB0RAAIDAAIDAAAAAAAAAAAAAAERAAIhAxIiodH/2gAMAwEAAhEDEQA/AOwczzNL2em7SDjId61j71y1CnUu8iEqIBOla3oU96pZdOYrZ2t3GsRirYtkvqu+e+fbSUcSN+aydJVfbuefzTv+lUpzHCpjL+oSfdbomAt0hbLYGgB5H6knz8+O1S1ZOvwF1ZACOujeeyObolzKW9owbMtcPTpUN8+e98lH8IorbgUHHQeQZL7bdtOl1bAct0KSSxxSrQIHxvZ+fuopVa2R5TU2dQhOEj5PJsVyLJ/QQbN4xfSTtwlblylHbkddt00+v8x/K1p/dFU7dFFRHlemo9/ZPukyJRc7lcpL2abNcg6w4ltLgWBoLBGx+4oqg0VoCgvfuXP/2Q==" class="img-responsive pull-right">
+              </li>
+              <li>
+                <a href="javascript:void(0)" title="PDF Viewer">PDF Viewer</a>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAgCAYAAADnnNMGAAADcUlEQVR42u2V609TdxjH/T90k0tbNimryJAMtglGlKHOuZBsUyw9raUFykUKYqw3VArYZbYUtfRGr/SGrVw2t8plDJ2RqVnim21ZZrJll//is0PfkMXs4nL6Ztnz5pzknOd8zvM83+f727Tp/5Ayfvr+G84faqC9upKFsJe8QKzqI5hUJZzdtweDqjQ/EEO5kmGTFr/Xhaa4kFsup/Sg1u2ljJiMZDKztCoV+AYt0kP0qm2M9Zp48uRrdMpivKcGpIeYanZgPa7m0XIWQf4iUfsV6SGXPnifjqpXmbJeQFDKmE9GpIe4rgznBq7eJqdzVzVPRUlLDrmzcBtzYz2CrIihNoG8LaTVKOSqGenR5w9iefsAaoWMYy/LWMt+Kj3o/vJtNHIZFzVqzG9Uc2LP7jwMvq8brbKEoMfNjaHTqGVbGNVrpQUZK8s4+e5hVleWSaSjfNRtyM3Hf/GMNKDpMSfHi7bidgzz9LtvefjwAb4JO/0H9qEpKiBw6RQz3uvM+V0sJKI8Xl18fnBvQz3Gqp24Lgxgb9Nxcm8dLaUKdKII9MUFNIsOIIhVHZVtRive6+TFnH6rkY+9nr+Hrf+Rx9JPi/yF3NDXlWUof4Wzhxqx95m4OtDFh/3tmOtrxY8X4BrsIxkY50a/mYG6Wo4qthAY+RMj/fXHH5gQzbBdpeSI2A5jhejA4gLOhyaYmY4wk0kRi0WIT/qYik3iHrPRVlWJdocK59B5wpEgc5kpRjRNdGwvexaSjXlp31mBtuQleutrEEq2YjOZCIV8eANuErEwqUyCz7Kz3L23yIO1+6Rv3mTi6ii9r1eJLRTf79DjuGyhf38DrWXlf4Sk3ddzg1wvP+oZp+fgXnSixYf9HlaW7/xlf1OpOCGXg8vH3qNZUZhTXkuJnOEuw0beUjohPtjMuabDRIIhHGf6aJEVYjvRzRdffv6P1BKfjhOZ9JIKuomP24lecxKKBzdyz+0/iOnN1/C4ncSjU3SKauraXU08FnguOc7OpQkGvQQCntx1ZWVhI98gSnKwtZm5T+LYBLU4i0KcVgv3Vpf/1bKtfbXybF5nXQ09FeVYm95BUMgZNQgkM2FpbWNdet21uxAqVdjMXYR9Xn757WeHpJBkIpTT9/ytJP7Ja2SXstK77ONHd0kkkgTFBVtanM/fofSfiN8BLqcYQmVrWIEAAAAASUVORK5CYII=" class="img-responsive pull-right marTop6">
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 pull-left padLeftAuto" style="padding-left:0">
+          <!--Bootstrap Panel accordian-->
+          <div class="panel-group panelBarAuto" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default bodBarNoneAuto posRelative autoRepositionBar">
+                <div class="panel panel-default">
+                    <div class="panel-heading collapseablePanelBar" role="tab" id="headingTwo">
+                        <p-accordion [ngClass]="['backgroundColNone']">
+                            <p-accordionTab header="{{propsedClauses}}">
+                                <ul class="PrposedClausedBarDesignAlignment">
+                                    <li>Proposed Clauses</li>
+                                    <li>Proposed Clauses</li>
+                                    <li>Proposed Clauses</li>
+                                  </ul>
+                            </p-accordionTab>
+                        </p-accordion>
+            
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body padAuto">
+                            <ul class="PrposedClausedBarDesignAlignment">
+                                <li>Proposed Clauses</li>
+                                <li>Proposed Clauses</li>
+                                <li>Proposed Clauses</li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div [ngClass]="['BgcolorBar','container-fluid','containerAlignMent']">
+      <div class="col-lg-6 pull-left padLeftAutoBar">
+        
+          <div class="panel panel-default boxShadowNone">
+              <div class="panel-heading CommonBgColor">
+                <div class="panelBgColorApp">Sentences-Score</div>
+              </div>
+              <div class="panel-body panelBodyAlignment">
+                  <section class="innerContentArea">
+                      <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      </p>
+                      <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      </p>
+                      <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      </p>
+                      <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      </p>
+                  </section>
+              </div>
+            </div>
+      </div>
+      <div class="col-lg-6 pull-left padRightAutoBar">
+          <div class="panel panel-default boxShadowNone">
+              <div class="panel-heading CommonBgColor">
+                  <div class="panelBgColorApp">Synopsis</div>
+              </div>
+              <div class="panel-body panelBodyAlignment padTop0Bar">
+                  <section class="innerContentArea">
+                      <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      </p>
+                      <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      </p>
+                  </section>
+              </div>
+            </div>
+            <div class="col-lg-6 pull-left padLeftAutoBar">
+                <div class="panel panel-default boxShadowNone">
+                    <div class="panel-heading CommonBgColor">
+                        <div class="panelBgColorApp">Category-Count-Score</div>
+                    </div>
+                    <div class="panel-body panelBodyAlignment">
+                        <section class="innerContentArea">
+    
+                        </section>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-6 pull-left padRightAutoBar">
+                <div class="panel panel-default boxShadowNone">
+                    <div class="panel-heading CommonBgColor">
+                        <div class="panelBgColorApp">Item name</div>
+    
+                    </div>
+                    <div class="panel-body panelBodyAlignment">
+                        <section class="innerContentArea">Panel Content</section>
+                    </div>
+                  </div>
+            </div>
+      </div>
+    </div>

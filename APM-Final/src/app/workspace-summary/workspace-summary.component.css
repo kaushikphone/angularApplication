@@ -1,0 +1,47 @@
+.bodRadius{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+.bodBottomSolid{
+    border: none;
+    border-bottom: 4px solid #9c9c9c;
+}
+.heightController{
+    height: 160px;
+    position: relative;
+}
+.minHeight{
+    height: 100%;
+}
+.summaryPreview{
+    color: #692b20;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 33%;
+    left: 20%;
+}
+.titlePreview{
+    color: #692b20;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 13%;
+    left: 20%;
+}
+.bottomMarginAuto{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.ui-state-default{
+    width: 220px!important;
+}
+.ui-dropdown.ui-widget.ui-state-default{
+    box-shadow:2px 2px 5px #ccc7c7!important;
+}
+.ui-dropdown label.ui-dropdown-label{
+    box-shadow: 1px 1px 1px #000!important;
+}

@@ -1,0 +1,228 @@
+/* You can add global styles to this file, and also import other style files */
+li {
+    font-size: large;
+}
+
+div.panel-heading {
+   font-size: x-large;
+}
+.lndcustomisied{
+    background-image: url(images/LndBG.png); 
+}
+.lftAlignBar{
+    margin-left: 18px;
+    margin-right: 18px;
+}
+.lftAlignBar span{
+    color: #fff;
+}
+.logobar{
+    margin-top: 20px;
+}
+.logobar a{
+    display: block;
+}
+.legalCheckbar{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.userListName{
+    font-size: 26px!important;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.userlist{
+    display: block;
+    margin: 0 auto;
+    font-size: 11px;
+}
+.hambuegerIcon i{
+    color: #fff;
+    font-size: 24px;
+    margin-top: 3px;
+}
+.widthBarFirst{
+    width: 36%;
+}
+.widthBarSecond{
+    width: 11%;
+}
+.widthBarThird{
+    width: 14%;
+}
+.widthBarFourth{
+    width: 18%;
+}
+.widthBarFifth{
+    width: 18%;
+}
+.widthBarSixth{
+    width: 18%;
+}
+.widthBar{
+    display: table-cell;
+    text-align: left;
+    line-height: 27px;
+    word-wrap: break-word;
+}
+.ui-accordion-content{
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+i.editbar{
+    font-size: 16px;
+}
+.innerAreaTd td{
+    font-size: 12px;
+}
+.headingBorderArea{
+    margin-bottom: 0!important;
+}
+.headingBorderArea tr th{
+    font-weight: normal;
+    font-size: 14px;
+    background-color: #ddd;
+}
+.ui-accordion .ui-accordion-header{
+    border:none!important;
+}
+.docuAlertUpload span{
+    color: #692b20;
+    margin-top: 4px;
+    font-size: 13px;
+    margin-right: 7px;
+}
+.minMarginGapAlign{
+    margin-right: 10px;
+}
+.padAutoBarEqualAlign{
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+.menuBindingBar{
+    padding-left: 0;
+    margin-left: 0;
+    overflow: hidden;
+}
+.menuBindingBar li{
+    list-style: none;
+    float: left;
+    border-bottom: 1px solid #c5bfbf;
+    width: 100%;
+    padding-bottom: 0;
+    line-height:180%; 
+}
+.menuBindingBar li a{
+    color: #692b20;
+    font-size: 12px;
+    text-align: left;
+}
+.menuBindingBar li a span{
+    margin-left: 5px;
+}
+.slideDownWrapper{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top:8%;
+    display: none;
+}
+.panelGroupByWidth{
+    width: 170px;
+}
+.GroupByOrder{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.GroupByOrder li{
+    list-style: none;
+    color: #692b20;
+    font-size: 12px;
+    text-align: left;
+}
+.GroupByOrder li input[type="radio"]{
+    margin-top: 2px;
+}
+button.bodradius{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+button.genrealBtnColumn{
+    background-color: #692b20;
+    color: #fff;
+    padding: 3px 15px;
+    border-color: #692b20;
+    outline: none;
+    border:none;
+    font-size: 11px;
+}
+button.genrealBtnColumn:hover{
+    background-color: #692b20;
+}
+.panel.customizedPanel{
+    border: none;
+    border-radius: 0;
+}
+.panel.bodAutoNone{
+    border: none;
+    outline: none;
+}
+.panelWidthAutobarMedium{
+    background-color: #fff;
+    padding: 10px 20px;
+}
+.panelControllerbar{
+    background-color: #f0f1f2;
+    display: flex;
+    justify-content: stretch;
+}
+.panelBgColor{
+    background-color: #e6e4e1!important;
+}
+.boxShadowNone{
+    box-shadow: none!important;
+}
+.roundedbarClickable{
+    width: 40px;
+    height: 40px;
+    background: #692b20;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    box-shadow: 0px 2px 2px #b7b3b3;
+    -webkit-box-shadow: 0px 2px 2px #b7b3b3;
+    -moz-box-shadow: 0px 2px 2px #b7b3b3;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    line-height: 26px;
+}
+.roundedbarClickable i{
+    font-size: 20px;
+    font-weight: normal;
+}
+.roundedbarClickable:hover, .roundedbarClickable:focus{
+    color: #fff;
+}
+.ui-sortable-column td{
+    padding: 5px;
+}
+.mintablebar{
+    float: left;
+}
+.ui-table .ui-table-thead > tr > td {
+    border: 1px solid #D5D5D5;
+    background: inherit;
+    padding: 5px;
+}
+.ui-table .ui-table-thead > tr:nth-child(even) {
+    background-color: #fafafb;
+}

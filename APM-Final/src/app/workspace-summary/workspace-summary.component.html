@@ -1,0 +1,59 @@
+<pm-navigation-bar></pm-navigation-bar>
+<div class="col-lg-12 WrapperBarAlign">
+    <div class="panel panel-default">
+        <div class="panel-body panelControllerbar">
+        <section class="col-lg-2 padAutoBarEqualAlign panelBgColor">
+                <div class="panel panel-default bodAutoNone boxShadowNone">
+                        <div class="panel-heading panelBgColor">
+                            <ul class="menuBindingBar">
+                                <li><a href="javascript:void(0)" title="All">All<span>(239)</span></a></li>       
+                                <li><a href="javascript:void(0)" title="Recent">Recent<span>(39)</span></a></li>
+                                <li><a href="javascript:void(0)" title="Processed">Processed</a></li>
+                                <li><a href="javascript:void(0)" title="Unprocessed">Unprocessed</a></li>
+                                <li><a href="javascript:void(0)" title="Archive">Archive</a></li>
+                            </ul>
+                        </div>
+                      </div>
+        </section>
+        <section class="col-lg-10 panelWidthAutobarMedium">
+            <p-accordion *ngFor="let month of _workspaceummary;let i = index"  [activeIndex]="i" class="hide">
+                <p-accordionTab header={{month.monthName}}>
+                    <p-dataTable [value]="Details">
+                        <p-row>
+                            <p-column header="Engine" field="Details.MonthDescription" [filter]="true" filterPlaceholder="Type engine"></p-column>
+                            <p-column header="Platform" field="Details.type" [filter]="true" filterPlaceholder="Type platform"></p-column>
+                            <p-column header="Rating" field="Details.Date" [filter]="true" filterPlaceholder="Type rating"></p-column>
+                        </p-row>
+                    </p-dataTable>
+                </p-accordionTab>
+            </p-accordion>
+            <!--search panel ui-->
+            
+            <!--search panel ui-->
+            <!--Select dropdown container in angular js 2-->
+            <section class="col-lg-4 pull-left bottomMarginAuto">
+                <input type="text" class="form-control" [(ngModel)]="term" placeholder="Search Workspace">
+                <!--<div class="panel" *ngIf="!term?.length == 0">No data</div>-->
+                <!--<p-dropdown [options]="_workspaceDropdown" [style]="{'width':'350px'}" (onChange)="workspaceOnchanger($event)"></p-dropdown>-->
+            </section>
+            <section class="col-lg-12 pull-left" style="padding-left:0; padding-right:0">
+                <a *ngFor="let x of _workspaceummary |filter:term;let i = index"  class="col-lg-3 col-sm-6 col-md-6 col-xs-12"   href="javascript:void(0)" [routerLink]="['/checktool',x.id]">
+                        <div class="panel panel-default bodRadius bodBottomSolid heightController">
+                            <div class="panel-heading bodRadius minHeight">
+                                <h2 class="summaryPreview">{{x.PreviewSummary}}</h2>
+                                <h3 class="titlePreview">{{x.workspaceTile}}</h3>
+                            </div>
+                        </div>
+                </a>
+              </section>
+        </section>
+        </div>
+      </div>
+</div>
+
+
+
+
+
+
+
