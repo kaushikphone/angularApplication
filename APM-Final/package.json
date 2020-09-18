@@ -34,7 +34,7 @@
     "ng2-toastr": "^4.1.2",
     "node-sass": "^4.7.2",
     "primeng": "^5.2.3",
-    "rxjs": "^5.4.1",
+    "rxjs": "^5.5.12",
     "sass-loader": "^6.0.7",
     "zone.js": "^0.8.14"
   },
