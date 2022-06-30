@@ -32,7 +32,7 @@
     "jquery": "^3.3.1",
     "ng2-search-filter": "^0.4.7",
     "ng2-toastr": "^4.1.2",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.9.1",
     "primeng": "^5.2.3",
     "rxjs": "^5.4.1",
     "sass-loader": "^6.0.7",
